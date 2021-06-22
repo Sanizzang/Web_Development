@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f84ab7cbbe.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Youtube Mobile</title>
 </head>
@@ -29,114 +30,119 @@
         <video controls src="video/video.mp4"></video>
     </section>
 
-    <!-- Video Info -->
-    <section class="info">
-        <!-- Metadata -->
-        <div class="metadata">
-            <ul class="hashtags">
-                <li>#DreamCoding</li>
-                <li>#DreamCoders</li>
-                <li>#Sanizzang</li>
-            </ul>
-            <div class="titleAndButton">
-                <span class="title">
-                    Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascipt 드림코딩과 함께하는 프론트엔드 실전 입문편
-                </span>
-                <button class="moreBtn">
-                    <i class="fas fa-caret-down"></i>
-                </button>
-            </div>
-            <div class="views">
-                <span class="views">1M views 1 month ago</span>
-            </div>
-        </div>
-
-        <!-- Actions -->
-        <ul class="actions">
-            <li>
-                <button><i class="fas fa-thumbs-up"></i><span>1K</span></button>
-            </li>
-            <li>
-                <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
-            </li>
-            <li>
-                <button><i class="fas fa-share"></i><span>Share</span></button>
-            </li>
-            <li>
-                <button><i class="fas fa-plus"></i><span>Save</span></button>
-            </li>
-            <li>
-                <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
-            </li>
-        </ul>
-
-        <!-- Channel Description -->
-        <idv class="info">
+    <div class="infoAndUpNext">
+           <!-- Video Info -->
+        <section class="info">
+            <!-- Metadata -->
             <div class="metadata">
-                <img src="image/avatar.jpg" alt="">
+                <ul class="hashtags">
+                    <li>#DreamCoding</li>
+                    <li>#DreamCoders</li>
+                    <li>#Sanizzang</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp">
+                        Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascipt 드림코딩과 함께하는 프론트엔드 실전 입문편
+                    </span>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="views">
+                    <span class="views">1M views 1 month ago</span>
+                </div>
             </div>
-            <div class="info">
-                <span class="name">
-                    Sanizzang
-                </span>
-                <span class="subscribers">
-                    1B subscribers
-                </span>
-            </div>
-            <button class="subscibe">Subscribe</button>
-        </idv>
-    </section>
 
-    <!-- UpNext -->
-    <section class="UpNext">
-        <span class="title">Up next</span>
-        <ul>
-            <li class="item">
-                <img src="image/1.jpg" alt="">
-                <div class="info">
-                    <span class="title">
-                        1번째 이미지
-                    </span>
-                    <span class="name">
-                        Sanizznag
-                    </span>
-                    <span class="views">
-                        1m views
-                    </span>
+            <!-- Actions -->
+            <ul class="actions">
+                <li>
+                    <button><i class="active fas fa-thumbs-up"></i><span>1K</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-share"></i><span>Share</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-plus"></i><span>Save</span></button>
+                </li>
+                <li>
+                    <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
+                </li>
+            </ul>
+
+            <!-- Channel Description -->
+            <idv class="channel">
+                <div class="metadata">
+                    <img src="image/avatar.jpg" alt="">
+                    <div class="info">
+                        <span class="name">
+                            Sanizzang
+                        </span>
+                        <span class="subscribers">
+                            1B subscribers
+                        </span>
+                    </div>
                 </div>
-                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-            <li class="item">
-                <img src="image/2.jpg" alt="">
-                <div class="info">
-                    <span class="title">
-                        2번째 이미지
-                    </span>
-                    <span class="name">
-                        Sanizznag
-                    </span>
-                    <span class="views">
-                        2m views
-                    </span>
-                </div>
-                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-            <li class="item">
-                <img src="image/3.jpg" alt="">
-                <div class="info">
-                    <span class="title">
-                        3번째 이미지
-                    </span>
-                    <span class="name">
-                        Sanizznag
-                    </span>
-                    <span class="views">
-                        3m views
-                    </span>
-                </div>
-                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-        </ul>
-    </section>
+
+                <button class="subscribe">subscribe</button>
+            </idv>
+        </section>
+
+        <!-- UpNext -->
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="img"><img src="image/1.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">
+                            1번째 이미지
+                        </span>
+                        <span class="name">
+                            Sanizznag
+                        </span>
+                        <span class="views">
+                            1m views
+                        </span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/2.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">
+                            2번째 이미지
+                        </span>
+                        <span class="name">
+                            Sanizznag
+                        </span>
+                        <span class="views">
+                            2m views
+                        </span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/3.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">
+                            3번째 이미지
+                        </span>
+                        <span class="name">
+                            Sanizznag
+                        </span>
+                        <span class="views">
+                            3m views
+                        </span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+ 
 </body>
 </html>
